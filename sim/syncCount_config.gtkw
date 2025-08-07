@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Thu Aug  7 06:23:32 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/syncCount_sim.vcd"
+[dumpfile_mtime] "Thu Aug  7 06:22:38 2025"
+[dumpfile_size] 1744
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/syncCount_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -27 -24
+*-4.727902 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] sync_counter_tb.
+[treeopen] sync_counter_tb.DUT.
+[sst_width] 297
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+sync_counter_tb.clk
+sync_counter_tb.rst
+@24
+sync_counter_tb.A[3:0]
+@28
+sync_counter_tb.DUT.T1.T
+sync_counter_tb.DUT.T2.T
+sync_counter_tb.DUT.T3.T
+sync_counter_tb.DUT.T4.T
+[pattern_trace] 1
+[pattern_trace] 0
