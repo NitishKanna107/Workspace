@@ -1,0 +1,110 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x611efa456490 .scope module, "trafficLight_tb" "trafficLight_tb" 2 1;
+ .timescale 0 0;
+v0x611efa4a6400_0 .var "clk", 0 0;
+v0x611efa4a64c0_0 .net "green", 0 0, L_0x611efa4a6940;  1 drivers
+v0x611efa4a6560_0 .net "red", 0 0, L_0x611efa4a6800;  1 drivers
+v0x611efa4a6660_0 .var "rst", 0 0;
+v0x611efa4a6730_0 .net "yellow", 0 0, L_0x611efa4a6ad0;  1 drivers
+S_0x611efa456620 .scope module, "DUT" "trafficLights" 2 6, 3 1 0, S_0x611efa456490;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /OUTPUT 1 "red";
+    .port_info 3 /OUTPUT 1 "green";
+    .port_info 4 /OUTPUT 1 "yellow";
+P_0x611efa47e9c0 .param/l "SG" 0 3 10, C4<11>;
+P_0x611efa47ea00 .param/l "SO" 0 3 10, C4<00>;
+P_0x611efa47ea40 .param/l "SR" 0 3 10, C4<01>;
+P_0x611efa47ea80 .param/l "SY" 0 3 10, C4<10>;
+L_0x70921dbb7018 .functor BUFT 1, C4<01>, C4<0>, C4<0>, C4<0>;
+v0x611efa48f870_0 .net/2u *"_ivl_0", 1 0, L_0x70921dbb7018;  1 drivers
+L_0x70921dbb7060 .functor BUFT 1, C4<11>, C4<0>, C4<0>, C4<0>;
+v0x611efa48fb50_0 .net/2u *"_ivl_4", 1 0, L_0x70921dbb7060;  1 drivers
+L_0x70921dbb70a8 .functor BUFT 1, C4<10>, C4<0>, C4<0>, C4<0>;
+v0x611efa48f9e0_0 .net/2u *"_ivl_8", 1 0, L_0x70921dbb70a8;  1 drivers
+v0x611efa4a5e70_0 .net "clk", 0 0, v0x611efa4a6400_0;  1 drivers
+v0x611efa4a5f30_0 .net "green", 0 0, L_0x611efa4a6940;  alias, 1 drivers
+v0x611efa4a6040_0 .net "red", 0 0, L_0x611efa4a6800;  alias, 1 drivers
+v0x611efa4a6100_0 .net "rst", 0 0, v0x611efa4a6660_0;  1 drivers
+v0x611efa4a61c0_0 .var "state", 1 0;
+v0x611efa4a62a0_0 .net "yellow", 0 0, L_0x611efa4a6ad0;  alias, 1 drivers
+E_0x611efa4926a0/0 .event negedge, v0x611efa4a6100_0;
+E_0x611efa4926a0/1 .event posedge, v0x611efa4a5e70_0;
+E_0x611efa4926a0 .event/or E_0x611efa4926a0/0, E_0x611efa4926a0/1;
+L_0x611efa4a6800 .cmp/eq 2, v0x611efa4a61c0_0, L_0x70921dbb7018;
+L_0x611efa4a6940 .cmp/eq 2, v0x611efa4a61c0_0, L_0x70921dbb7060;
+L_0x611efa4a6ad0 .cmp/eq 2, v0x611efa4a61c0_0, L_0x70921dbb70a8;
+    .scope S_0x611efa456620;
+T_0 ;
+    %wait E_0x611efa4926a0;
+    %load/vec4 v0x611efa4a6100_0;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 2;
+    %assign/vec4 v0x611efa4a61c0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x611efa4a61c0_0;
+    %cmpi/e 3, 0, 2;
+    %jmp/0xz  T_0.2, 4;
+    %pushi/vec4 1, 0, 2;
+    %assign/vec4 v0x611efa4a61c0_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/vec4 v0x611efa4a61c0_0;
+    %addi 1, 0, 2;
+    %assign/vec4 v0x611efa4a61c0_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x611efa456490;
+T_1 ;
+    %delay 200, 0;
+    %vpi_call 2 8 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x611efa456490;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x611efa4a6400_0, 0, 1;
+T_2.0 ;
+    %delay 5, 0;
+    %load/vec4 v0x611efa4a6400_0;
+    %inv;
+    %store/vec4 v0x611efa4a6400_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_0x611efa456490;
+T_3 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x611efa4a6660_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x611efa4a6660_0, 0, 1;
+    %end;
+    .thread T_3;
+    .scope S_0x611efa456490;
+T_4 ;
+    %vpi_call 2 17 "$dumpfile", "traffic_sim.vcd" {0 0 0};
+    %vpi_call 2 18 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x611efa456490 {0 0 0};
+    %vpi_call 2 19 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x611efa456620 {0 0 0};
+    %end;
+    .thread T_4;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb/traffic_light_tb.v";
+    "rtl/traffic_light.v";

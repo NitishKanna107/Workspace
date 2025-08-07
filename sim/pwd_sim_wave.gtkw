@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Sun Jul 13 01:07:01 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/pwd_sim.vcd"
+[dumpfile_mtime] "Sun Jul 13 01:05:52 2025"
+[dumpfile_size] 1325
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/pwd_sim_wave.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -1 -1
+*-6.073321 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] pwd_unlock_tb.
+[sst_width] 297
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+pwd_unlock_tb.clk
+pwd_unlock_tb.rst
+pwd_unlock_tb.key[1:0]
+pwd_unlock_tb.DUT.key_prev[1:0]
+@29
+pwd_unlock_tb.DUT.counter[2:0]
+@28
+pwd_unlock_tb.unlock
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Aug  5 12:15:17 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/binCount_sim.vcd"
+[dumpfile_mtime] "Tue Aug  5 12:14:39 2025"
+[dumpfile_size] 1749
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/binCount_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -27 -24
+*-4.727902 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 297
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+binary_counter_tb.clk
+binary_counter_tb.rst
+@29
+binary_counter_tb.A[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

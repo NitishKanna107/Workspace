@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Wed Jul 30 13:11:14 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/shift_sim.vcd"
+[dumpfile_mtime] "Wed Jul 30 13:10:25 2025"
+[dumpfile_size] 1234
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/shift_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -27 -24
+*-5.080481 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] shift_reg_tb.
+[treeopen] shift_reg_tb.DUT.
+[sst_width] 297
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+shift_reg_tb.clk
+shift_reg_tb.rst
+shift_reg_tb.sin
+shift_reg_tb.sout
+shift_reg_tb.DUT.ff1.q
+shift_reg_tb.DUT.ff2.q
+shift_reg_tb.DUT.ff3.q
+@29
+shift_reg_tb.DUT.ff4.q
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Sat Jul 26 06:35:03 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/uart_tx_sim.vcd"
+[dumpfile_mtime] "Sat Jul 26 06:34:19 2025"
+[dumpfile_size] 386702
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/uart_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -1 -1
+*-23.738491 97200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] uart_tx_tb.
+[sst_width] 297
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+uart_tx_tb.clk
+uart_tx_tb.rst
+uart_tx_tb.tx_active
+uart_tx_tb.DUT.state[1:0]
+uart_tx_tb.DUT.data_index[2:0]
+uart_tx_tb.y_out
+[pattern_trace] 1
+[pattern_trace] 0

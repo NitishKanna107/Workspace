@@ -1,0 +1,96 @@
+$date
+	Tue Jul 15 14:13:44 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module jk_counter_tb $end
+$var wire 1 ! b $end
+$var wire 1 " a $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$scope module DUT $end
+$var wire 1 # clk $end
+$var wire 1 % ja $end
+$var wire 1 & jb $end
+$var wire 1 ' ka $end
+$var wire 1 ( kb $end
+$var wire 1 $ rst $end
+$var wire 1 ) b_bar $end
+$var wire 1 ! b $end
+$var wire 1 * a_bar $end
+$var wire 1 " a $end
+$scope module ff1 $end
+$var wire 1 # clk $end
+$var wire 1 % j $end
+$var wire 1 ' k $end
+$var wire 1 $ rst $end
+$var reg 1 " q $end
+$var reg 1 * qbar $end
+$upscope $end
+$scope module ff2 $end
+$var wire 1 # clk $end
+$var wire 1 & j $end
+$var wire 1 ( k $end
+$var wire 1 $ rst $end
+$var reg 1 ! q $end
+$var reg 1 ) qbar $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#10
+$dumpvars
+x*
+x)
+1(
+0'
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#15
+1)
+1'
+1%
+1!
+1*
+1#
+#20
+0#
+#25
+1"
+0)
+0'
+0%
+0!
+1#
+#30
+0#
+#35
+1)
+1'
+1%
+1!
+0*
+1#
+#40
+0#
+#45
+0"
+0)
+0'
+0%
+0!
+1#
+#50
+0#

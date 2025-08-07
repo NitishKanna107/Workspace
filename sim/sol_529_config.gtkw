@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Tue Jul 15 15:52:35 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/sol_529.vcd"
+[dumpfile_mtime] "Tue Jul 15 15:51:16 2025"
+[dumpfile_size] 1031
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/sol_529_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -27 -24
+*-4.317087 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] solution_tb.
+[sst_width] 297
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+solution_tb.clk
+solution_tb.rst
+solution_tb.x
+@22
+solution_tb.DUT.state[3:0]
+solution_tb.DUT.next_state[3:0]
+@29
+solution_tb.DUT.y
+[pattern_trace] 1
+[pattern_trace] 0
