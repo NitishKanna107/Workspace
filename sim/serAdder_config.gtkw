@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.116 (w)1999-2023 BSI
+[*] Sat Aug  9 09:28:03 2025
+[*]
+[dumpfile] "/home/nitishkanna/Verilog/Workspace/sim/serAdder_sim.vcd"
+[dumpfile_mtime] "Sat Aug  9 09:22:49 2025"
+[dumpfile_size] 3497
+[savefile] "/home/nitishkanna/Verilog/Workspace/sim/serAdder_config.gtkw"
+[timestart] 0
+[size] 1920 1033
+[pos] -1 -1
+*-4.727902 164 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] serAdder_tb.
+[treeopen] serAdder_tb.DUT.
+[sst_width] 297
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 308
+@28
+serAdder_tb.clk
+serAdder_tb.rst
+serAdder_tb.load
+serAdder_tb.A
+serAdder_tb.B
+@29
+serAdder_tb.DUT.FA1.A
+serAdder_tb.DUT.FA1.B
+serAdder_tb.DUT.FA1.Cin
+serAdder_tb.DUT.FA1.Cout
+serAdder_tb.DUT.FA1.sum
+[pattern_trace] 1
+[pattern_trace] 0
