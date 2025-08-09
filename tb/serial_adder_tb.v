@@ -4,7 +4,7 @@ wire S;
 
 serAdder DUT(clk, rst, load, A, B, S);
 
-initial #90 $finish;
+initial #100 $finish;
 initial begin
     clk = 0;
     forever #5 clk = ~clk;
@@ -29,6 +29,6 @@ initial begin
     #10 A = 1; B = 0;
 
     #3 load = 1;
-    #40 load = 0;
+    #50 load = 0;
 end
 endmodule
